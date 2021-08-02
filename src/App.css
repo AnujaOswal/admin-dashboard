@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Left tab with the right window */
+.main {
+  min-height: 100vh;
+  display: flex;
+  max-width: 100%;
+}
+
+/* left tab css */
+.l-tab {
+  width: 12%;
+  padding: 1rem;
+  background-color: #4e73df;
+  background-image: linear-gradient(#4e73df, #224abe);
+  color: white;
+  line-height: 2;
+}
+
+.tabIcon {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  transform: rotate(-20deg);
+}
+
+.l-tab h5 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.l-tab a {
+  color: rgb(211, 211, 211);
+}
+
+.l-tab a:hover,
+.l-tab a:focus {
+  color: white;
+}
+
+.dropdownTab div > a,
+.dropdownTab div > a:hover {
+  color: black;
+}
+/* right window setup */
+.r-tab {
+  min-height: 100vh;
+  width: 88%;
+  background-color: #f8f9fc;
+}
+/* navbar */
+.navTop {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  box-shadow: -1px 8px 25px -7px rgba(107, 107, 107, 0.53);
+}
+
+/* searchbar */
+.searchBar {
+  flex: 50%;
+  display: flex;
+  padding: 0 0.5rem;
+  max-width: 25rem;
+}
+
+.search {
+  flex: 50%;
+  outline-color: #4e72dfa9;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  padding: 0 0.5rem;
+}
+
+.searchIcon {
+  padding: 0.8rem;
+  height: 100%;
+  background-color: #4e73df;
+  color: white;
+  border-radius: 0 3px 3px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* alert icons section */
+.alert {
+  display: flex;
+  flex: 50%;
+  align-items: center;
+  justify-content: flex-end;
+  flex-basis: auto;
+}
+
+.alertBdg {
+  color: rgb(199, 198, 198);
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.alertBdg p {
+  text-align: center;
+  margin: 0 1rem 0 0;
+}
+
+.alertIcon {
+  display: none;
+}
+
+.s-icon {
+  height: auto;
+  width: 1.3em;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Text Heading */
+.DashboardHeader {
+  color: #585858;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 1.5rem 1rem;
+}
+
+/*Dashboard Content*/
+.dashboardflex {
+  margin: 1rem;
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  justify-content: stretch;
+}
+
+.borderCard {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 1.5rem 1rem;
+  border-radius: 5px;
+  box-shadow: -1px 8px 25px -7px rgba(107, 107, 107, 0.53);
+}
+
+.borderCard p {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.borderCard h4 {
+  padding: 0;
+  margin: 0;
+  color: #585858;
+  width: fit-content;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+}
+
+.dashIcon {
+  color: #a8aab3;
+  font-size: x-large;
+}
+/* Contents Card Component */
+.contentsCard {
+  margin: 1.5rem 1rem;
+  border-radius: 5px;
+  box-shadow: -1px 8px 25px -7px rgba(107, 107, 107, 0.53);
+  border: 1px solid #e3e6f0;
+}
+
+.contentsCard h6 {
+  padding: 1rem;
+  color: #4e73df;
+  background-color: #eaecf5;
+  border-bottom: 1px solid #e3e6f0;
+}
+
+.contentsCard p {
+  color: #858796;
+  font-weight: 400;
+  margin: 1rem;
+}
+
+.contentsCard a {
+  color: #4e73df;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.contentsCard a:hover {
+  color: none;
+  text-decoration: underline;
+}
+
+.link {
+  margin: 1rem;
+}
+/* Contents Alignment */
+.Contents {
+  display: flex;
+}
+
+.l-content,
+.r-content {
+  flex: 50%;
+}
+/* Projects Progress Bar */
+.projectProgress {
+  margin: 1rem;
+}
+
+.projectProgress p {
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-weight: 500;
+}
+.info {
+  display: flex;
+  width: 100%;
+}
+
+.info p {
+  flex: 50%;
+}
+
+.percent {
+  text-align: right;
+}
+
+/* Footer */
+.footer {
+  background-color: white;
+  width: 100%;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  bottom: 0;
+}
+
+.footer p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #858796;
+  text-align: center;
+  padding-top: 1rem;
+  padding-right: 12%;
+}
+@media screen and (max-width: 720px) {
+  .searchBar {
+    margin-left: 2rem;
+    margin-right: 1rem;
+    width: 100%;
+    margin-top: 10rem;
+    height: 3rem;
+    position: absolute;
+    display: none;
+    box-shadow: -1px 8px 25px -7px rgba(107, 107, 107, 0.53);
+  }
+  .tabIcon {
+    font-size: 1rem;
+    margin: 0 1rem;
+    transform: rotate(-20deg);
+  }
+  .searchIcon {
+    padding: 0.3rem 1.2rem;
+  }
+  .l-tab {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    font-size: 100%;
+  }
+
+  .r-tab {
+    width: 125%;
+  }
+  .footer p {
+    padding-right: 0;
+  }
+
+  .Contents {
+    flex-direction: column;
+  }
+  .l-content,
+  .r-content {
+    flex: 100%;
+  }
+}
